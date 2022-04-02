@@ -9,7 +9,6 @@ screen = pygame.display.set_mode([500, 500])
 running = True
 i = 0
 while running:
-    bg = pygame.image.load(os.path.join("./", "https://cdn.pixabay.com/photo/2020/11/07/01/40/abstract-5719535_1280.jpg"))
 
     time.sleep(0.01)
     if i < 255:
