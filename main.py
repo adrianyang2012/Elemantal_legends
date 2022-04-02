@@ -4,7 +4,7 @@ import time
 from random import randint
 pygame.init()
 
-screen = pygame.display.set_mode([1000, 1000])
+screen = pygame.display.set_mode([2000, 2000])
 
 running = True
 i = 1
@@ -31,7 +31,7 @@ while running:
     r = randint(0,10)
     screen.fill((i,i,i))
     if exploded:
-        b = int(abs_i/3)
+        b = int(abs_i/2)
     pygame.draw.circle(screen, (255, i, i), (abs_i+r, abs_i-r), 75+b)
     
     pygame.display.flip()
